@@ -24,13 +24,20 @@ export default function Modal() {
               <button>CUPS</button>
               <input type="number" />
             </div>
-            <div>
+            <div className="timeSection">
               <h1>Start time</h1>
               <p>Set when this offer expires (defaults to 10years from now)</p>
+              <div className="dateTime">
+                <input type="date" className="date" />
+                <input type="time" className="time" />
+              </div>
+              <div className="balance">
+                <p>Available Balance:</p>
+                <p> {}CUPS</p>
+              </div>
+              <button>Make Offer</button>
             </div>
-            <button className="close-modal" onClick={toggleModal}>
-              Close
-            </button>
+            <button className="close-modal" onClick={toggleModal}></button>
           </div>
         </div>
       )}
