@@ -40,11 +40,32 @@
   width: 100%;
 }
 .balance {
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
 }
 .dateTime {
   display: flex;
 }
 .date {
   flex: 1;
+}
+.timeTitle {
+  font-size: 1.3rem;
+}
+.offerTitle {
+  font-size: 2rem;
+}
+.offer button {
+  background-color: white;
+  border: 1px solid rgb(100, 24, 172);
+  padding: 7px 10px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.token {
+  margin-top: 30px;
+}
+.offer p {
+  margin-bottom: 8px;
 }

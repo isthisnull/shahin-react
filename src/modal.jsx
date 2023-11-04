@@ -5,6 +5,7 @@ export default function Modal() {
   const toggleModal = () => {
     setModal(!modal);
   };
+  const mamad = 9;
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
@@ -15,25 +16,31 @@ export default function Modal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <div className="offer">
-              <h1>Place offer</h1>
+              <p className="offerTitle">Place offer</p>
               <p>
                 You are about to place an offer, select the amount and payment
                 token
               </p>
-              <button>WETH</button>
-              <button>CUPS</button>
-              <input type="number" />
+              <div className="token">
+                <button>WETH</button>
+                <button>
+                  {" "}
+                  <img src="" />
+                  CUPS
+                </button>
+              </div>
+              <input type="number" min={0} step={0.1} />
             </div>
             <div className="timeSection">
-              <h1>Start time</h1>
-              <p>Set when this offer expires (defaults to 10years from now)</p>
+              <p className="timeTitle">Start time</p>
+              <p>Set when this offer expires (defaults to 10 years from now)</p>
               <div className="dateTime">
                 <input type="date" className="date" />
                 <input type="time" className="time" />
               </div>
               <div className="balance">
                 <p>Available Balance:</p>
-                <p> {}CUPS</p>
+                <p> {mamad} CUPS</p>
               </div>
               <button>Make Offer</button>
             </div>
