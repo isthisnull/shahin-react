@@ -75,6 +75,7 @@
 .token {
   margin-top: 30px;
   display: flex;
+  margin-bottom: 12px;
 }
 .offer p {
   margin-bottom: 8px;
@@ -85,4 +86,24 @@
 }
 .closeBtn {
   width: 20px;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.amount input {
+  flex: 1;
+  margin-right: 10px;
+}
+.amountInput {
+  padding: 8px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.amountInput:focus,
+.amountInput:focus-visible {
+  outline: 3px solid rgb(94, 0, 78);
 }

@@ -31,7 +31,17 @@ export default function Modal() {
                   BTC
                 </button>
               </div>
-              <input type="number" min={0} step={0.1} />
+              <div className="amount">
+                <input
+                  type="number"
+                  min={0}
+                  step={0.1}
+                  required
+                  placeholder="0"
+                  className="amountInput"
+                />
+                <p>BTC</p>
+              </div>
             </div>
             <div className="timeSection">
               <p className="timeTitle">Start time</p>
