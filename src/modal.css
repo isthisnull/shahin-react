@@ -31,6 +31,13 @@
   position: absolute;
   right: 3px;
   top: 3px;
+  background-color: transparent;
+  padding: 0px;
+  border-style: none;
+}
+
+.close-modal:hover {
+  cursor: pointer;
 }
 .timeSection button {
   color: white;
@@ -57,15 +64,25 @@
 }
 .offer button {
   background-color: white;
-  border: 1px solid rgb(100, 24, 172);
+  border: 1px solid rgba(100, 24, 172, 0.4);
   padding: 7px 10px;
   margin-right: 6px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
 }
 .token {
   margin-top: 30px;
+  display: flex;
 }
 .offer p {
   margin-bottom: 8px;
+}
+.token img {
+  width: 30px;
+  margin-right: 2px;
+}
+.closeBtn {
+  width: 20px;
 }

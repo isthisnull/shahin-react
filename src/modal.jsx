@@ -22,11 +22,13 @@ export default function Modal() {
                 token
               </p>
               <div className="token">
-                <button>WETH</button>
                 <button>
-                  {" "}
-                  <img src="" />
-                  CUPS
+                  <img src="assets\coins.png" />
+                  WETH
+                </button>
+                <button>
+                  <img src="assets\22.png" />
+                  BTC
                 </button>
               </div>
               <input type="number" min={0} step={0.1} />
@@ -40,11 +42,13 @@ export default function Modal() {
               </div>
               <div className="balance">
                 <p>Available Balance:</p>
-                <p> {mamad} CUPS</p>
+                <p> {mamad} BTC</p>
               </div>
               <button>Make Offer</button>
             </div>
-            <button className="close-modal" onClick={toggleModal}></button>
+            <button className="close-modal" onClick={toggleModal}>
+              <img src="assets/close.png" className="closeBtn" />
+            </button>
           </div>
         </div>
       )}
