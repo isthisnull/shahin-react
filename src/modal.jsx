@@ -14,16 +14,20 @@ export default function Modal() {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>Hello world</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              debitis nobis, dolor doloremque aspernatur nihil totam impedit
-              maxime recusandae cupiditate officiis earum vel voluptate deserunt
-              asperiores pariatur sit vero temporibus! Magnam debitis iste nemo
-              aliquid at nesciunt, tempore reiciendis! Libero, et voluptatem
-              odit ab velit quas nisi optio ratione corrupti temporibus, placeat
-              fugiat iusto. Iure nobis sint harum debitis!
-            </p>
+            <div className="offer">
+              <h1>Place offer</h1>
+              <p>
+                You are about to place an offer, select the amount and payment
+                token
+              </p>
+              <button>WETH</button>
+              <button>CUPS</button>
+              <input type="number" />
+            </div>
+            <div>
+              <h1>Start time</h1>
+              <p>Set when this offer expires (defaults to 10years from now)</p>
+            </div>
             <button className="close-modal" onClick={toggleModal}>
               Close
             </button>

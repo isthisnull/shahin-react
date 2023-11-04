@@ -1,5 +1,6 @@
 .modal,
 .overlay {
+  color: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,6 +20,6 @@
   padding: 14px 28px;
   border-radius: 3px;
   max-width: 500px;
-  background-color: rgb(225, 3, 3);
+  background-color: rgb(255, 255, 255);
   min-width: 300px;
 }
