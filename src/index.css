@@ -24,10 +24,15 @@ body {
   min-height: 100vh;
 }
 
-button:hover {
+button:hover,
+.date:hover,
+.time:hover,
+.amountInput:hover {
   border-color: rgb(3, 0, 3);
 }
 button:focus,
-button:focus-visible {
+button:focus-visible,
+.date:focus,
+.time:focus {
   outline: 4px auto rgb(106, 12, 91);
 }

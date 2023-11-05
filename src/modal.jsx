@@ -45,7 +45,9 @@ export default function Modal() {
             </div>
             <div className="timeSection">
               <p className="timeTitle">Start time</p>
-              <p>Set when this offer expires (defaults to 10 years from now)</p>
+              <p className="tenYear">
+                Set when this offer expires (defaults to 10 years from now)
+              </p>
               <div className="dateTime">
                 <input type="date" className="date" />
                 <input type="time" className="time" />
@@ -54,7 +56,7 @@ export default function Modal() {
                 <p>Available Balance:</p>
                 <p> {mamad} BTC</p>
               </div>
-              <button>Make Offer</button>
+              <button className="offerBtn">Make Offer</button>
             </div>
             <button className="close-modal" onClick={toggleModal}>
               <img src="assets/close.png" className="closeBtn" />
